@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: llm-config
+data:
+  MODEL_ID: HuggingFaceTB/SmolLM2-135M-Instruct
+  MODEL_REVISION: 12fd25f77366fa6b3b4b768ec3050bf629380bac
+  MODEL_ROOT: /models
+  SERVED_MODEL_NAME: local-model
+  DTYPE: float32
+  MAX_MODEL_LEN: "512"
+  MAX_NUM_SEQS: "1"
+  MAX_NUM_BATCHED_TOKENS: "512"
+  KV_CACHE_MEMORY_BYTES: "134217728"
+  VLLM_CPU_OMP_THREADS_BIND: nobind
+  OMP_NUM_THREADS: "2"
+  HF_HUB_DISABLE_TELEMETRY: "1"

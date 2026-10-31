@@ -1,0 +1,7 @@
+**
+!Dockerfile
+!requirements.txt
+!privacy_logging.py
+!logging.json
+!download_model.py
+!start_server.py
